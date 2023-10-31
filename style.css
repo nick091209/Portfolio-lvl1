@@ -11,6 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     background: whitesmoke;
+    
 
 }
 
@@ -25,6 +26,7 @@ label.logo{
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
+    margin-left: 50px;
     font-weight: bold;
 }
 
@@ -66,13 +68,29 @@ a.active,a:hover{
     display: none;
 }
 
-@media (max-width: 952px){
+@media (max-width: 976px){
     label.logo{
-        font-size: 30px;
-        padding-left: 50px;
+        font-size: 25px;
+        padding: 0;
+        margin-left: 37px;
     }
     nav ul li a{
-        font-size: 16px;
+        font-size: 20px;
+        
+    }
+    .content{
+        text-align: center;
+        margin: 0;
+    }
+    .hometext{
+        margin: 0;
+        float: left;
+    }
+    nav{
+        height: 80px;
+    }
+    .checkbtn{
+        margin-right: 27px;
     }
 }
 
@@ -102,12 +120,15 @@ a.active,a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+
 }
 
 .hometext{
+    text-decoration: unset;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
     margin-left: 10%;
     margin-top: 13%;
-    font-family: 'Montserrat', sans-serif;
 }
 
 
