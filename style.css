@@ -67,6 +67,43 @@ a.active,a:hover{
 #check {
     display: none;
 }
+.hometext{
+    text-decoration: unset;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10%;
+    margin-top: 13%;
+}
+
+
+.hometext p{
+    color: black;
+    line-height: 22px;
+}
+
+.hometext a{
+    background: #8DD0E3;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+.hometitel {
+    color: black;
+}
+
+.homefoto {
+    float: right;
+    margin-right: 200px;
+    margin-top: -300px;
+}
+
+img {
+    border-radius: 50%;
+}
 
 @media (max-width: 976px){
     label.logo{
@@ -121,61 +158,66 @@ a.active,a:hover{
         left: 0;
     }
 
-}
-
-.hometext{
-    text-decoration: unset;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 10%;
-    margin-top: 13%;
-}
-
-
-.hometext p{
-    color: black;
-    line-height: 22px;
-}
-
-.hometext a{
-    background: #8DD0E3;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: inline-block;
-    margin: 30px 0;
-}
-
-.hometitel {
-    color: black;
-}
-
-.homefotos {
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-}
-
-.homefotos img {
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
-}
-
-.homefotos:hover .vorm{
-    bottom: 35px;
-}
-
-.homefotos:hover .foto{
-    left: 45%;
     
+
 }
+
+@media (max-width: 768px) {
+    .homefoto {
+        margin-top: 100px;
+        
+    }
+
+    .img {
+        margin-right: 300px;
+
+    }
+
+    .hometext {
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 210px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .homefoto {
+       margin-right: 13px;
+       
+    }
+
+    label.logo{
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 99px;
+        margin-left: 0px;
+        font-weight: bold;
+    } 
+}
+
+@media (max-width: 426px) {
+    .hometext {
+        text-align: center;
+       
+        margin-left: 50px;
+      
+    }
+
+    label.logo{
+        font-size: 25px;
+        padding: 0;
+        margin-left: 30px;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 

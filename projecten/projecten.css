@@ -1,3 +1,19 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nav nav nav"
+    "projecten projecten projecten"
+    "projecten projecten projecten";
+}
+
+.nav { grid-area: nav; }
+
+.projecten { grid-area: projecten; }
+
+
 *{
   padding: 0;
   margin: 0;
@@ -48,7 +64,7 @@ nav ul li a{
   font-family: 'Montserrat', sans-serif;
 }
 
-a.active,a:hover{
+a.active,a.navlinks:hover{
   background: #A3D9E8;
   transition: .5s;
 }
@@ -66,6 +82,66 @@ a.active,a:hover{
 #check {
   display: none;
 }
+
+.projecten {
+  margin-top: 25vh;
+  margin-left: 83vh;
+  position: relative;
+  width: 50%
+
+}
+
+.technoeffect {
+  margin: 0;
+  padding: 0;
+  width: 217px;
+}
+
+.technolink {
+  margin: 0;
+  padding: 0;
+  width: 217px;
+}
+.image {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #8DD0E3;
+  border-radius: 10%;
+}
+
+.projecten:hover .overlay {
+  opacity: 100%;
+}
+
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
 
 @media (max-width: 976px){
   label.logo{
@@ -113,6 +189,7 @@ a.active,a:hover{
   }
 
 }
+
 
 
 
